@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="fizz.css">
+</head>
+<body>
+<main>
+  <h1>Fizz Buzz</h1>
+  <section>
+    <p>In this game, you enter a positive number, and I count from 0 to that number, subbing in "fizz" if it's divisible by 3, "buzz" if it's divisible by 5, and "fizzbuzz" if it's divisible by both</p>
+    <form id="number-chooser" action="www.somewhere.com">
+      <label for="number-choice">Choose a positive number</label>
+      <input id="number-choice" name="number-choice" type="number" required />
+      <input type="submit" />
+    </form>
+  </section>
+  <section>
+    <h2>Results</h2>
+    <div class="js-results">
+
+    </div>
+  </section>
+</main>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+<script>
+//iterate through an inputed set of numbers
+//print number or appropriate fizzbuzz term
+// inside of a div; should look like:
+
+// <div class="fizz-buzz-item">
+//  <span>1</span>
+// </div>
+
+// .fizz-buzz-item
+// .fizz .buzz .fizzbuzz
+$function(){
+console.log(parseInt($('input[name="number-choice"]').val()));
+
+function fbMath(num){
+  if (num % 15 === 0){
+    return "fizzbuzz";
+  }
+  else if (num % 5 === 0){
+    return "buzz"
+  }
+};
+};
+//for (var i=0; i<input[type=number]; i++){
+//
+//}
+</script>
+
+
+</body>
+</html>
